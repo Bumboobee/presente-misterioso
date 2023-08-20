@@ -44,6 +44,11 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+
+  a {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.2rem;
+  }
 `;
 
 export const Container = styled.div`

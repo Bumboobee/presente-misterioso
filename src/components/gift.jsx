@@ -8,7 +8,7 @@ function Gift() {
   return (
     <ContainerA>
       <a href={quizState.giftSrc}>
-        Presente misterioso aqui ❤
+        Presente misterioso aqui 🎁
       </a>
     </ContainerA>
   );
