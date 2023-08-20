@@ -46,6 +46,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) { 
+    padding-top: 1rem;
+  }
 `;
 
 export const P = styled.p`
