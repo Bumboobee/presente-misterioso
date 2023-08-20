@@ -18,9 +18,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body, html {
-    min-height: 100vh;
-    height: 100%;
+  body {
+    height: 100vh;
     background: linear-gradient(
     180deg,
     var(--white--00) 0%,
@@ -47,7 +46,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     padding-top: 1rem;
   }
 `;
@@ -57,10 +56,10 @@ export const P = styled.p`
   margin-bottom: 3rem;
 
   &.intro {
-    @media (max-width: 768px) { 
+    @media (max-width: 768px) {
       max-width: 375px;
     }
-    
+
     display: block;
     margin: 1rem auto;
   }
@@ -68,6 +67,6 @@ export const P = styled.p`
 
 export const ContainerA = styled.div`
   margin-top: 2rem;
-`
+`;
 
 export default GlobalStyle;
