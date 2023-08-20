@@ -18,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+  body, html {
+    height: 100vh;
     background: linear-gradient(
     180deg,
     var(--white--00) 0%,
