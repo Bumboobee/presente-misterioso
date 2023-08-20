@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    height: 100vh;
     background: linear-gradient(
     180deg,
     var(--white--00) 0%,
