@@ -35,6 +35,7 @@ const quizReducer = (state, action) => {
       if (!questions[nextQuestion]) {
         endGame = true;
       }
+
       return {
         ...state,
         currentQuestion: nextQuestion,
@@ -66,6 +67,14 @@ const quizReducer = (state, action) => {
         meme: randomMeme.meme,
         giftSrc: randomMeme.src
       }
+    case "CHANGE_OPTIONS":
+      console.log(questions[state.currentQuestion].options)
+      questions[state.currentQuestion].options.sort(() => {
+        return Math.random() - 0.5;
+      });
+
+      console.log(questions[state.currentQuestion].options);
+      return state
     default:
       return state;
   }

@@ -36,11 +36,19 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
     color: var(--black--00);
   }
+
+  h2 {
+    @media (max-width: 768px) {
+      @media (max-height: 736px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
 `;
 
 export const Container = styled.div`
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +69,7 @@ export const P = styled.p`
     }
 
     display: block;
-    margin: 1rem auto;
+    margin: .5rem auto;
   }
 `;
 

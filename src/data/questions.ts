@@ -9,7 +9,7 @@ const data = [
     options: [
       "Vaticano e Rússia",
       "Nauru e China",
-      " Mônaco e Canadá",
+      "Mônaco e Canadá",
       "Vaticano e Hawai",
     ],
     answer: "Vaticano e Rússia",

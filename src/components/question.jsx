@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { QuizContext } from "../context/quiz";
 import * as Style from "../components/styles/question";
 import Button from "../components/shared/button";
@@ -11,9 +11,13 @@ const Question = () => {
   const onSelectOption = (option) => {
     dispatch({
       type: "CHECK_ANSWER",
-      payload: { answer: currentQuestion.answer, option }
-    })
-  }
+      payload: { answer: currentQuestion.answer, option },
+    });
+  };
+
+  // useEffect(() => {
+  //   dispatch({ type: "CHANGE_OPTIONS" });
+  // }, [currentQuestion]);
 
   return (
     <Style.Container>
@@ -24,7 +28,12 @@ const Question = () => {
 
       <div>
         {currentQuestion.options.map((option) => (
-          <Option option={option} key={option} answer={currentQuestion.answer} selectOption={() => onSelectOption(option)} />
+          <Option
+            option={option}
+            key={option}
+            answer={currentQuestion.answer}
+            selectOption={() => onSelectOption(option)}
+          />
         ))}
       </div>
 

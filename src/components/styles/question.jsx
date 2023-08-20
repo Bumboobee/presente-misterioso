@@ -9,5 +9,5 @@ export const Container = styled.div`
     border: 1px solid var(--grey--01);
     padding: 20px;
     border-radius: 7px;
-    max-width: 470px
+    max-width: 550px
 `
